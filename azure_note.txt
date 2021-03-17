@@ -1,0 +1,9 @@
+ah3555b2ctest.onmicrosoft.com
+Display name: testvue
+Application (client) ID: ea802793-b2e4-473d-a1b0-667d73fee5c9
+Directory (tenant) ID: 6409a815-f314-4278-bf7d-c6e77e552539
+Object ID: efa2fa10-2332-4dd8-80aa-5940e0cc9cb7
+
+Client Secret
+Value: vhgp~0ll6h.aH4R.yNTX3~mG-0_b1QNoH0
+ID: 9614507c-21f5-4a5c-9dc8-9a421e40d6a6

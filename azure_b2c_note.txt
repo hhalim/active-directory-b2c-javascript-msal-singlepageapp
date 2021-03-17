@@ -1,0 +1,26 @@
+Azure B2C setup
+Create a new Azure B2C tenant (this will be the domain the client users reside in)
+1. Register a new app against the newly created Azure B2C. Create a secrete key.
+2. Select identity providers (local email, MS Account, google, facebook, etc.)
+3. Create a user flow: Go back to the root Azure B2C, create a User Flow. 
+
+Create 3 User Flows:
+signin/up (B2C_1_signup_signin)
+password reset (B2C_1_pwd_reset)
+edit profile (B2C_1_edit_profile)
+
+User Flow
+Manually run through portal, you must append &code_challenge=<code> or it won't work at all, produces error.
+
+response_type=code => authentication code flow
+response_type=id_token => auth token and id token
+
+https://ah3555b2ctest.b2clogin.com/ah3555b2ctest.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_signup_signin&client_id=ea802793-b2e4-473d-a1b0-667d73fee5c9&nonce=defaultNonce&redirect_uri=http%3A%2F%2Flocalhost%3A8080&scope=openid&response_type=id_token&prompt=login&code_challenge=YTFjNjI1OWYzMzA3MTI4ZDY2Njg5M2RkNmVjNDE5YmEyZGRhOGYyM2IzNjdmZWFhMTQ1ODg3NDcxY2Nl
+
+User Administrator
+Create user that sign in for the portal.azure.com in our Organization (not the Azure AD B2C).
+Role: User Administrator
+useradmin@ah3555b2ctest.onmicrosoft.com
+Frog@2424
+
+Direct URL: https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers
