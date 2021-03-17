@@ -8,7 +8,9 @@ const response = document.getElementById("response");
 
 // updates the UI post login/token acquisition
 function updateUI() {
-    const userName = myMSALObj.getAccount().name;
+    const acct = myMSALObj.getAccount();
+    console.log("accountIdentifier",acct. accountIdentifier);
+    const userName = acct.name ? acct.name : acct.idToken.family_name;
     logMessage("User '" + userName + "' logged-in");
 
     signInButton.classList.add('d-none');

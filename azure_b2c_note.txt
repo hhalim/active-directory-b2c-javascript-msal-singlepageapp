@@ -5,7 +5,7 @@ Create a new Azure B2C tenant (this will be the domain the client users reside i
 3. Create a user flow: Go back to the root Azure B2C, create a User Flow. 
 
 Create 3 User Flows:
-signin/up (B2C_1_signup_signin)
+signin OR signin/up (B2C_1_signup_signin) => Make sure the Attributes include email address (for msal.js to populate username)
 password reset (B2C_1_pwd_reset)
 edit profile (B2C_1_edit_profile)
 
