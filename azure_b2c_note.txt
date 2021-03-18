@@ -24,3 +24,11 @@ useradmin@ah3555b2ctest.onmicrosoft.com
 Frog@2424
 
 Direct URL: https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers
+
+CUSTOM GROUP 
+Go to Azure AD (not B2C) groups and roles. Create a new Security group "Manager".
+Go back to Azure AD B2C Users panel. Click on a user. Click on Groups. Click on Add Memberships ro Remove Memberships.
+
+
+WARNING:
+MSAL.JS won't return access token if the SCOPE for SPA registration has no WebAPI permission. MUST setup a WebAPI registration first and then grant SPA the WebAPI permission. See b2c_app_registration.txt.

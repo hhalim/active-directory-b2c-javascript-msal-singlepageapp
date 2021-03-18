@@ -1,0 +1,30 @@
+Test SPA Registration
+https://github.com/hhalim/ms-identity-b2c-javascript-spa
+ah3555b2ctest.onmicrosoft.com
+Display name: testvue
+Application (client) ID: ea802793-b2e4-473d-a1b0-667d73fee5c9
+Directory (tenant) ID: 6409a815-f314-4278-bf7d-c6e77e552539
+Object ID: efa2fa10-2332-4dd8-80aa-5940e0cc9cb7
+
+Client Secret
+Value: vhgp~0ll6h.aH4R.yNTX3~mG-0_b1QNoH0
+ID: 9614507c-21f5-4a5c-9dc8-9a421e40d6a6
+
+
+WebAPI Registration
+https://github.com/hhalim/active-directory-b2c-javascript-nodejs-webapi
+How to tutorial: https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-single-page-app-webapi?tabs=app-reg-ga#add-a-web-api-application
+Display name: TestWebAPI
+Application (client) ID: 9dd856f1-dd4d-46cc-80d7-298c683c893e
+Directory (tenant) ID: 6409a815-f314-4278-bf7d-c6e77e552539
+Object ID: e7c17869-3610-4088-a57f-aa2419cddf58
+
+ApplicationID URI: https://ah3555b2ctest.onmicrosoft.com/api
+
+Scopes:
+https://ah3555b2ctest.onmicrosoft.com/api/demo.read
+https://ah3555b2ctest.onmicrosoft.com/api/demo.write
+
+Grant Permissions
+Go back to the SPA registration. Click the API permissions.
+Add the WebAPI registration permission to the SPA registration. Grant admin consent!!!
